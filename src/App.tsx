@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FormProvider, useForm, useFormContext } from "react-hook-form";
+import "./App.scss";
+import Button, { OutlineButton } from "./components/button/Button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+type Inputs = {
+	example: string;
+	exampleRequired: string;
+};
+
+export default function App() {
+	const methods = useForm<Inputs>();
+	const { errors } = methods.formState;
+	console.log(errors);
+
+	const onSubmit = (data: Inputs) => console.log(data);
+
+	return (
+		<FormProvider {...methods}>
+			<form className="section" onSubmit={methods.handleSubmit(onSubmit)}>
+				<NestedInput />
+				<Button type="submit">Submit</Button>
+				<OutlineButton>Outline btn</OutlineButton>
+				<p>12321312</p>
+			</form>
+		</FormProvider>
+	);
 }
 
-export default App;
+function NestedInput() {
+	const {
+		register,
+		formState: { errors },
+	} = useFormContext<Inputs>(); // Retrieve all hook methods
+	return (
+		<>
+			<input {...register("exampleRequired", { required: " This is req" })} />
+			{errors.exampleRequired && <p>{errors.exampleRequired.message}</p>}
+		</>
+	);
+}
