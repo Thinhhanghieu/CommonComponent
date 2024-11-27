@@ -1,6 +1,8 @@
 @use "./scss/" as *;
 
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 * {
 	padding: 0;
@@ -62,11 +64,6 @@ iframe {
 	border: 0;
 }
 
-.container {
-	max-width: 1660px;
-	margin: 0;
-}
-
 .section {
 	padding: 0 2rem;
 }
@@ -75,6 +72,9 @@ iframe {
 	@include flex(center, space-between);
 }
 
+.text-danger{ 
+	color: $error-color;
+}
 input {
   border: 0;
   background-color: $black;

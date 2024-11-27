@@ -1,40 +1,30 @@
-import { FormProvider, useForm, useFormContext } from "react-hook-form";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Button, { OutlineButton } from "./components/button/Button";
-
-type Inputs = {
-	example: string;
-	exampleRequired: string;
-};
+import AppLayOut from "./components/layout/AppLayout";
+import routes from "./router/router";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
-	const methods = useForm<Inputs>();
-	const { errors } = methods.formState;
-	console.log(errors);
-
-	const onSubmit = (data: Inputs) => console.log(data);
-
 	return (
-		<FormProvider {...methods}>
-			<form className="section" onSubmit={methods.handleSubmit(onSubmit)}>
-				<NestedInput />
-				<Button type="submit">Submit</Button>
-				<OutlineButton>Outline btn</OutlineButton>
-				<p>12321312</p>
-			</form>
-		</FormProvider>
-	);
-}
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<AppLayOut />}>
+					<Route index element={<Dashboard />} />
 
-function NestedInput() {
-	const {
-		register,
-		formState: { errors },
-	} = useFormContext<Inputs>(); // Retrieve all hook methods
-	return (
-		<>
-			<input {...register("exampleRequired", { required: " This is req" })} />
-			{errors.exampleRequired && <p>{errors.exampleRequired.message}</p>}
-		</>
+					{routes.map((route, index) =>
+						route.index ? (
+							<Route index key={index} element={route.element} path={route.path} />
+						) : (
+							<Route
+								index={route.index}
+								path={route.path}
+								key={index}
+								element={route.element}
+							/>
+						)
+					)}
+				</Route>
+			</Routes>
+		</BrowserRouter>
 	);
 }
