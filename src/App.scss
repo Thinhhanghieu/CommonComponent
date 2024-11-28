@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -72,15 +72,82 @@ iframe {
 	@include flex(center, space-between);
 }
 
-.text-danger{ 
+.text-danger {
 	color: $error-color;
 }
 input {
-  border: 0;
-  background-color: $black;
-  padding: .5rem 1.5rem;
-  font-size: 1rem;
-  border-radius: $border-radius;
-  color: $txt-color;
-  font-family: $font-family;
+	border: 0;
+	background-color: $black;
+	padding: 0.5rem 1.5rem;
+	font-size: 1rem;
+	border-radius: $border-radius;
+	color: $txt-color;
+	font-family: $font-family;
+}
+
+.loading-spinner-container {
+	content: "";
+	background: #fff;
+	position: fixed;
+	inset: 0px;
+	overflow: auto;
+	outline: 0px;
+	z-index: 99999;
+	opacity: 0.5;
+}
+
+.loading-spinner {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, -50%) translateZ(0);
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	z-index: 99999;
+	/* background:  */
+	background-size: contain;
+	animation: spinning 1.5s infinite ease-in-out;
+}
+
+.loading-spinner:after {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 100%;
+	margin: -15px;
+	box-shadow: 0 4px 0 0 #233daa;
+	transition: all 1s linear;
+	animation: lds-eclipse 1s linear infinite;
+}
+@keyframes spinning {
+	0% {
+		transform: translate(-50%, -50%) scale(1) translateZ(0);
+	}
+
+	50% {
+		transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1) translateZ(0);
+	}
+}
+
+@keyframes lds-eclipse {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
