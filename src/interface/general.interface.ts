@@ -1,6 +1,4 @@
-export interface IFormLogin {
-	example: string;
-	exampleRequired: string;
-	email: string;
-	password: string;
+export interface IOption {
+	value: string | number;
+	label: string;
 }
