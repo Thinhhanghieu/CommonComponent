@@ -63,19 +63,19 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}
 					>
 						<Select
 							className={className}
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 						>
 							{options &&
 								options.map((opt) => (
 									<Option key={opt.value} value={opt.value}>
-										{t(opt.label)}
+										{opt.label}
 									</Option>
 								))}
 						</Select>
@@ -86,14 +86,14 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}
 					>
 						<Input
 							className={className}
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 						/>
 					</Form.Item>
 				);
@@ -102,14 +102,14 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 						<Form.Item
 							key={name}
 							name={name}
-							label={t(label)}
+							label={label}
 							rules={rules}
 							dependencies={dependencies}
 						>
 							<Input.Password
 								className={className}
 								disabled={disable}
-								placeholder={t(placeHolder)}
+								placeholder={placeHolder}
 							/>
 						</Form.Item>
 				);
@@ -118,7 +118,7 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}
 					>
@@ -127,7 +127,7 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 							className="ant-input ant-input-outlined"
 							decimalScale={4}
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 						/>
 					</Form.Item>
 				);
@@ -136,7 +136,7 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}
 						valuePropName="checked"
@@ -154,7 +154,7 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}
 					>
@@ -162,7 +162,7 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 							className="w-100"
 							format={FORMAT_TIME_PICKER}
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 						/>
 					</Form.Item>
 				);
@@ -171,14 +171,14 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}>
 						<DatePicker
 							showTime={showtime}
 							className="w-100"
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 						/>
 					</Form.Item>
 				);
@@ -187,50 +187,50 @@ function CommonForm<T = any>(props: CommonFormProps<T>): ReactElement {
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}>
 						<DatePicker
 							className="w-100"
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 							picker="month"
 						/>
 					</Form.Item>
 				);
 				case "inputNumber":
 					return (
-						<Form.Item
-							key={name}
-							name={name}
-							label={t(label)}
-							rules={rules}
-							dependencies={dependencies}
-						>
-							<InputNumber
-								className="w-100"
-								disabled={disable}
-								placeholder={t(placeHolder)}
-								addonAfter={addonAfter}
-								controls={false}
-								formatter={formatter ? formatValue : undefined}
-								parser={parser ? parseValue : undefined}
-								stringMode={false}
-							/>
-						</Form.Item>
-				);
+							<Form.Item
+								key={name}
+								name={name}
+								label={label}
+								rules={rules}
+								dependencies={dependencies}
+							>
+								<InputNumber
+									className="w-100"
+									disabled={disable}
+									placeholder={placeHolder}
+									addonAfter={addonAfter}
+									controls={false}
+									formatter={formatter ? formatValue : undefined}
+									parser={parser ? parseValue : undefined}
+									stringMode={false}
+								/>
+							</Form.Item>
+					);
 			case "textArea":
 				return (
 					<Form.Item
 						key={name}
 						name={name}
-						label={t(label)}
+						label={label}
 						rules={rules}
 						dependencies={dependencies}>
 						<Input.TextArea
 							className="w-100"
 							disabled={disable}
-							placeholder={t(placeHolder)}
+							placeholder={placeHolder}
 							autoSize={{ minRows: 2, maxRows: 6 }}
 						/>
 					</Form.Item>

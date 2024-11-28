@@ -1,0 +1,939 @@
+{
+	"SCREEN": {
+		"INSTRUMENT": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"UPDATE": "Update Instrument",
+					"ADD": "Add Instrument",
+					"DETAIL": "Instrument Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"INSTRUMENT_CODE": "INSTRUMENT CODE",
+					"INSTRUMENT_NAME": "INSTRUMENT NAME",
+					"EXCHANGE_CODE": "EXCHANGE CODE",
+					"GROUP_CODE": "GROUP CODE",
+					"COMBINED_CODE": "COMBINED CODE",
+					"TRADE_TYPE": "TRADE TYPE",
+					"PRODUCT_TYPE": "PRODUCT TYPE",
+					"CONTRACT_UNIT": "CONTRACT UNIT",
+					"STATUS": "STATUS"
+				}
+			},
+			"LABEL": {
+				"EXCHANGE_CODE": "Exchange Code:",
+				"INSTRUMENT_CODE": "Instrument Code:",
+				"INSTRUMENT_ID": "Instrument ID:",
+				"INSTRUMENT_NAME": "Instrument Name:",
+				"GROUP_CODE": "Group Code:",
+				"COMBINED_CODE": "Combined Code:",
+				"TRADE_TYPE": "Trade Type:",
+				"PRODUCT_TYPE": "Product Type:",
+				"CONTRACT_UNIT": "Contract Unit:",
+				"DEC_PRICE": "Dec Price",
+				"TRADING_START_TIME_PN": "Trading Start Time PN:",
+				"TRADING_END_TIME_PN": "Trading End Time PN:",
+				"TRADING_START_TIME_TN": "Trading Start Time TN:",
+				"TRADING_END_TIME_TN": "Trading End Time TN:",
+				"TRADING_START_TIME_TD": "Trading Start Time TD:",
+				"TRADING_END_TIME_TD": "Trading End Time TD:",
+				"STATUS": "Status:",
+				"AGENT_METHOD": "Agent com method",
+				"COM_METHOD": "Commission method"
+
+			},
+			"PLACE_HOLDER": {
+				"EXCHANGE_CODE": "Exchange Code",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"INSTRUMENT_NAME": "Instrument Name",
+				"INSTRUMENT_ID": "Instrument ID:",
+				"GROUP_CODE": "Group Code",
+				"COMBINED_CODE": "Combined Code",
+				"TRADE_TYPE": "Trade Type",
+				"PRODUCT_TYPE": "Product Type",
+				"CONTRACT_UNIT": "Contract Unit",
+				"DEC_PRICE": "Dec Pric",
+				"TRADING_START_TIME_PN": "Selected Time",
+				"TRADING_END_TIME_PN": "Selected Time",
+				"TRADING_START_TIME_TN": "Selected Time",
+				"TRADING_END_TIME_TN": "Selected Time",
+				"TRADING_START_TIME_TD": "Selected Time",
+				"TRADING_END_TIME_TD": "Selected Time"
+			}
+		},
+		"USER": {
+			"TITLE": "User List",
+			"LOGIN_LABEL": "Login",
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"UPDATE": "Update User",
+					"ADD": "Add User",
+					"DETAIL": "User Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"LOGIN": "LOGIN",
+					"USER_NAME": "FULL NAME",
+					"ROLE": "USER ROLE",
+					"AGENT_ROLE": "AGENT ROLE",
+					"COMPANY_ID": "COMPANY ID",
+					"STATUS": "STATUS",
+					"USER_ID": "USER ID",
+					"BRANCH_ID": "BRANCH ID",
+					"SECTION_ID": "SECTION ID",
+					"DEP_ID": "DEPARTMENT ID",
+					"AGENT_FLAG": "AGENT FLAG"
+				}
+			},
+			"LABEL": {
+				"LOGIN": "Login",
+				"USER_NAME": "Full name",
+				"PASSWORD": "Password",
+				"ROLE": "Role",
+				"COMPANY_ID": "Company ID",
+				"STATUS": "Enable this user",
+				"AGENT_FLG": "Agent",
+				"USER_ID": "User ID",
+				"BRANCH_ID": "Branch ID",
+				"SECTION_ID": "Section ID",
+				"DEP_ID": "Department ID",
+				"AGENT_ROLE": "Agent Role"
+			},
+			"PLACE_HOLDER": {
+				"LOGIN": "Login",
+				"USER_NAME": "Full Name",
+				"PASSWORD": "Password",
+				"ROLE": "Role",
+				"COMPANY_ID": "Company ID"
+			}
+		},
+		"HOLIDAY": {
+			"TITLE": "Holidays",
+			"TABLE": {
+				"THEAD": {
+					"DAY": "DAY",
+					"DESCRIPTION": "DESCRIPTION",
+					"NATIONAL_HOLIDAY": "NATIONAL HOLIDAY",
+					"TRADING_HOLIDAY": "TRADING HOLIDAY"
+				}
+			},
+			"LABEL": {
+				"DAY": "Date",
+				"NATIONAL_HOLIDAY": "National holiday",
+				"TRADING_HOLIDAY": "Trading holiday",
+				"DESCRIPTION": "Description",
+				"DELETE_HOLIDAY": "Do you really want to delete this holiday?"
+			},
+			"PLACE_HOLDER": {
+				"DATE": "Date",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"SYMBOLS": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"UPDATE": "Update Symbol",
+					"ADD": "Add Symbol",
+					"DETAIL": "Symbol Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"SYMBOL_CODE": "Symbol Code",
+					"SYMBOL_NAME": "Symbol Name",
+					"EXCHANGE_CODE": "Exchange Code",
+					"COMBINED_CODE": "COMBINED CODE",
+					"PRODUCT_TYPE": "Product Type",
+					"CONTRACT_MONTH": "Contract Month",
+					"CALL_PUT": "Call put",
+					"STRIKE_PRICE": "Strike Price",
+					"SECURITIES_CODE": "Securities Code",
+					"TRADING_UNIT": "Trading Unit",
+					"CONTRACT_UNIT": "Contract Unit",
+					"STATUS": "Status"
+				}
+			},
+			"LABEL": {
+				"EXCHANGE_CODE": "Exchange Code",
+				"SYMBOL_CODE": "Symbol Code",
+				"SYMBOL_ID": "Symbol ID",
+				"SYMBOL_NAME_JP": "Symbol Name JP",
+				"SYMBOL_NAME_EN": "Symbol Name EN",
+				"CONTRACT_MONTH": "Contract Month",
+				"CALL_PUT": "Call put",
+				"STRIKE_PRICE": "Strike Price",
+				"PRODUCT_TYPE": "Product Type",
+				"START_DATE": "Start Date",
+				"LAST_TRADE_DATE": "Last Trade Date",
+				"EXPIRED_DATE": "Expired date",
+				"CURRENCY": "Currency",
+				"SECURITIES_CODE": "Securities Code",
+				"MARKET_GW_CODE": "MarketGW Code",
+				"CONTRACT_UNIT": "Contract Unit",
+				"PRICE_DIGITS": "Price digits",
+				"STATUS": "Status",
+				"CREATE_DATE_TIME": "Create date time",
+				"UPDATE_DATE_TIME": "Update date time",
+				"ARMADILLO_SYMBOL_CODE": "Armadillo Code"
+			},
+			"PLACE_HOLDER": {
+				"EXCHANGE_CODE": "Exchange Code",
+				"SYMBOL_CODE": "Symbol Code",
+				"SYMBOL_ID": "Symbol ID",
+				"SYMBOL_NAME_JP": "Symbol Name JP",
+				"SYMBOL_NAME_EN": "Symbol Name EN",
+				"CONTRACT_MONTH": "Contract Month",
+				"CALL_PUT": "Call put",
+				"STRIKE_PRICE": "Strike Price",
+				"START_DATE": "Start Date",
+				"LAST_TRADE_DATE": "Last Trade Date",
+				"EXPIRED_DATE": "Expired date",
+				"CURRENCY": "Currency",
+				"SECURITIES_CODE": "Securities Code",
+				"CONTRACT_UNIT": "Contract Unit",
+				"PRICE_DIGITS": "Price digits",
+				"STATUS": "Status",
+				"CREATE_DATE_TIME": "Create date time",
+				"UPDATE_DATE_TIME": "Update date time"
+			}
+		},
+		"ACCOUNTS": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"DETAIL": "Account Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"TRADING_ACCOUNT_ID": "Trading Account ID",
+					"CUSTOMER_NAME": "Customer Name",
+					"ACCOUNT_TYPE": "Account Type",
+					"GROUP_CODE": "Group code",
+					"TRADING_RIGHT": "Trading rights",
+					"CREATE_TIME": "Create time"
+				}
+			},
+			"LABEL": {
+				"TRADING_ACCOUNT_ID": "Trading Account ID",
+				"CUSTOMER_NAME": "Customer Name",
+				"ACCOUNT_TYPE": "Account Type",
+				"GROUP_CODE": "Group code",
+				"TRADING_RIGHT": "Trading rights",
+				"CREATE_TIME": "Created datetime",
+				"COMMENT": "Comment",
+				"COMPANY_ID": "Company Id",
+				"BRANCH_ID": "Branch Id",
+				"AGENT_ID": "Agent Id",
+				"MARGIN_COMPANY_FLG": "Use company margin",
+				"MARGIN_LEVEL": "Margin Level",
+				"HEDGE_MARGIN_FLG": "Use hedge margin"
+			},
+			"PLACE_HOLDER": {
+				"TRADING_ACCOUNT_ID": "Trading Account ID",
+				"CUSTOMER_NAME": "Customer Name",
+				"ACCOUNT_TYPE": "Account Type",
+				"GROUP_CODE": "Group code",
+				"TRADING_RIGHT": "Trading rights",
+				"CREATE_TIME": "Created datetime",
+				"COMMENT": "Comment"
+			}
+		},
+		"GROUP": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Group",
+					"UPDATE_GROUP": "Edit Group"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"GROUP_CODE": "GROUP CODE",
+					"GROUP_NAME": "GROUP NAME",
+					"COMMISSION_SETTING": "Commission Setting",
+					"RISK_CONTROL_SETTING": "Risk Control Setting",
+					"EDIT": "",
+					"DELETE": ""
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"GROUP_CODE": "Group Code",
+				"GROUP_NAME": "Group Name",
+				"DELETE_GROUP": "Do you want to delete this group?",
+				"UPDATE_GROUP": "Do you want to UPDATE?"
+			},
+			"PLACE_HOLDER": {
+				"TRADING_ACCOUNT_ID": "Trading Account ID",
+				"CUSTOMER_NAME": "Customer Name",
+				"ACCOUNT_TYPE": "Account Type",
+				"GROUP_CODE": "Group code",
+				"TRADING_RIGHT": "Trading rights",
+				"CREATE_TIME": "Created datetime",
+				"COMMENT": "Comment"
+			}
+		},
+		"COMMISSION": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add commission detail",
+					"UPDATE_COMMISSION": "Update commission group"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"GROUP_CODE": "GROUP CODE",
+					"GROUP_NAME": "GROUP",
+					"INSTRUMENT_CODE": "INSTRUMENT CODE",
+					"INSTRUMENT_ID": "Instrument ID",
+					"ORDER_ENTRY": "ORDER ENTRY",
+					"COM_TYPE": "COM. TYPE",
+					"VALUE_T0": "VALUE(T+0)",
+					"VALUE_T1": "VALUE(T+1)",
+					"VALUE_T2": "VALUE(T+2)",
+					"MIN_AMOUNT": "MIN AMOUNT",
+					"MAX_AMOUNT": "MAX AMOUNT"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"GROUP_CODE": "Group Code",
+				"GROUP_NAME": "Group Name",
+				"INSTRUMENT_CODE": "Instrument code",
+				"INSTRUMENT_ID": "Instrument ID",
+				"ORDER_ENTRY": "Order entry",
+				"COM_TYPE": "Commission type",
+				"VALUE_T0": "Value (T+0)",
+				"VALUE_T1": "Value (T+1)",
+				"VALUE_T2": "Value (T+2)",
+				"MIN_AMOUNT": "Min amount",
+				"MAX_AMOUNT": "Max amount",
+				"DELETE_COM": "Do you want to delete",
+				"UPDATE_GROUP": "Do you want to UPDATE?"
+			},
+			"PLACE_HOLDER": {
+				"TRADING_ACCOUNT_ID": "Trading Account ID",
+				"CUSTOMER_NAME": "Customer Name",
+				"ACCOUNT_TYPE": "Account Type",
+				"GROUP_CODE": "Group code",
+				"TRADING_RIGHT": "Trading rights",
+				"CREATE_TIME": "Created datetime",
+				"COMMENT": "Comment"
+			}
+		},
+		"RISK_CONTROL": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add group trading instrument",
+					"UPDATE": "Edit group trading instrument"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"INSTRUMENT_CODE": "INSTRUMENT CODE",
+					"OPEN_BUY": "OPEN - BUY",
+					"OPEN_SELL": "OPEN - SELL",
+					"CLOSE_BUY": "CLOSE - BUY",
+					"CLOSE_SELL": "CLOSE - SELL",
+					"TRADABLE": "TRADABLE"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"GROUP_CODE": "Group Code",
+				"GROUP_NAME": "Group Name",
+				"INSTRUMENT_CODE": "Instrument code",
+				"OPEN_BUY": "Open - Buy",
+				"OPEN_SELL": "Open - Sell",
+				"CLOSE_BUY": "Close - Buy",
+				"CLOSE_SELL": "Close - Sell",
+				"TRADABLE": "Tradable",
+				"BUY_EXTRA_MARGIN_UNIT": "Buy Extra Margin Unit",
+				"BUY_EXTRA_QTY": "Buy Extra Qty",
+				"SELL_EXTRA_MARGIN_UNIT": "Sell Extra Margin Unit",
+				"SELL_EXTRA_QTY": "Sell Extra Qty"
+			},
+			"PLACE_HOLDER": {
+				"TRADING_ACCOUNT_ID": "Trading Account ID",
+				"CUSTOMER_NAME": "Customer Name",
+				"ACCOUNT_TYPE": "Account Type",
+				"GROUP_CODE": "Group code",
+				"TRADING_RIGHT": "Trading rights",
+				"CREATE_TIME": "Created datetime",
+				"COMMENT": "Comment"
+			}
+		},
+		"COMMON_SETTING": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Common Setting",
+					"UPDATE": "Edit Common Setting"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"ITEM": "ITEM",
+					"VALUE": "VALUE",
+					"DESCRIPTION": "DESCRIPTION"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"BRANCH": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Branch",
+					"UPDATE": "Update Branch"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"COMPANY_ID": "Company ID",
+					"BRANCH_ID": "Branch ID",
+					"BRANCH_NAME": "Branch Name",
+					"BRANCH_CODE": "Branch Code",
+					"ADDRESS": "Address"
+				}
+			},
+			"LABEL": {
+				"ID": "Id",
+				"COMPANY_ID": "Company ID",
+				"BRANCH_ID": "Branch ID",
+				"BRANCH_NAME": "Branch Name",
+				"BRANCH_CODE": "Branch Code",
+				"ADDRESS": "Address"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"COMPANY": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Company",
+					"UPDATE": "Update Company"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"COMPANY_ID": "Company ID",
+					"COMMISSION_AMOUNT": "Commission Amount",
+					"AGENT_COMMISSION_AMOUNT": "AGENT COMMISSION AMOUNT",
+					"MARGIN_RATIO": "MARGIN RATIO",
+					"COMPANY_NAME": "COMPANY NAME"
+				}
+			},
+			"LABEL": {
+				"ID": "Id",
+				"COMPANY_ID": "Company ID",
+				"COMMISSION_AMOUNT": "Commission Amount",
+				"AGENT_COMMISSION_AMOUNT": "Agent commission amount",
+				"MARGIN_RATIO": "Margin Ratio",
+				"COMPANY_NAME": "Company Name"
+			},
+			"PLACE_HOLDER": {
+				"COMPANY_ID": "Company ID",
+				"COMMISSION_AMOUNT": "Commission Amount",
+				"AGENT_COMMISSION_AMOUNT": "Agent commission amount",
+				"MARGIN_RATIO": "Margin Ratio"
+			}
+		},
+		"INSTRUMENT_COM": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Branch",
+					"UPDATE": "Edit Common Setting"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"COMPANY_ID": "Company ID",
+					"BRANCH_ID": "Branch ID"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"COMPANY_ID": "Company ID",
+				"BRANCH_ID": "Branch ID",
+				"EXCHANGE_CODE": "Exchange Code",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"ODER_ENTRY": "Order Entry",
+				"COMMISSION_TYPE": "Commission Type",
+				"COMMISSION_VALUE": "Commission Value",
+				"COMMISSION_VALUE_T0": "Commission Value T0",
+				"COMMISSION_VALUE_T1": "Commission Value T1",
+				"COMMISSION_VALUE_T2": "Commission Value T2",
+				"MIN_AMOUNT_COMMISSION": "Min Amount Commission",
+				"MAX_AMOUNT_COMMISSION": "Max Amount Commission"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"AGENT_COM": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Agent Commission Setting",
+					"UPDATE": "Agent Commission  Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"COMPANY_ID": "Company ID",
+					"BRANCH_ID": "Branch ID"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"COMPANY_ID": "Company ID",
+				"BRANCH_ID": "Branch ID",
+				"EXCHANGE_CODE": "Exchange Code",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"ODER_ENTRY": "Order Entry",
+				"COMMISSION_TYPE": "Commission Type",
+				"COMMISSION_VALUE": "Commission Value",
+				"COMMISSION_VALUE_T0": "Commission Value T0",
+				"COMMISSION_VALUE_T1": "Commission Value T1",
+				"COMMISSION_VALUE_T2": "Commission Value T2",
+				"MIN_AMOUNT_COMMISSION": "Min Amount Commission",
+				"MAX_AMOUNT_COMMISSION": "Max Amount Commission"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"ORDER": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Order",
+					"UPDATE": "Update Order"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"COMPANY_ID": "Company ID",
+					"BRANCH_ID": "Branch ID",
+					"ORDER_ID": "Order ID",
+					"ORDER_REF": "Order REF",
+					"EXTERNAL_ID": "External ID",
+					"RELATE_ORDER_ID": "Related Order ID",
+					"ACCOUNT": "Account",
+					"EXCHANGE": "Exchange",
+					"CONTRACT_SIZE":"CONTRACT SIZE",
+					"SYMBOL_CODE": "Symbol Code",
+					"PRODUCT_TYPE": "Product Type",
+					"CONTRACT_MONTH": "Contract Month",
+					"ORDER_STATE":"ORDER STATE",
+					"ORDER_ROUTE":"ORDER ROUTE",
+					"ORDER_TIME": "ORDER_TIME",
+					"REQUEST_TYPE":"REQUEST TYPE",
+					"COMMENT":"COMMENT",
+					"CP": "CP",
+					"POSITION_ID":"POSITION ID",
+					"STRIKE_PRICE": "Strike Price",
+					"SYMBOL_ID": "Symbol ID",
+					"ORDER_MODE": "Order Mode",
+					"ORDER_ENTRY": "Order Entry",
+					"SIDE": "BUY/SELL",
+					"ORDER_QTY": "Order Quantity",
+					"LAST_ORDER_QTY": "Last Order Quantity",
+					"EXECUTED_QTY": "Executed Quantity",
+					"ORDER_TYPE": "Order Type",
+					"TYPE_FILL": "Type Fill",
+					"ORDER_PRICE": "Order Price",
+					"TRIGGER_PRICE": "Trigger Price",
+					"LAST_ORDER_TIME": "Last Order Time",
+					"EXECUTED_TIME": "Executed Time",
+					"ORDER_EXPIRATION": "Order Expiration",
+					"EXPIRED_DATE": "Expired Date",
+					"EXECUTION_TRIGGER": "Execution Trigger",
+					"AGENT_ID": "Agent ID",
+					"AGENT_FLAG": "Agent Flag"
+				}
+			},
+			"LABEL": {
+				"ACCOUNT": "Account",
+				"ORDER_FROM": "From",
+				"ORDER_TO": "To",
+				"ORDER_ID": "Order ID",
+				"SYMBOL_CODE": "Symbol Code",
+				"ORDER_TYPE": "Order Type",
+				"ORDER_REF": "Order Reference",
+				"EXTERNAL_ID": "External ID",
+				"EXCHANGE_CODE": "Exchange",
+				"POSITION_ID": "Position ID",
+				"CONTRACT_SIZE": "Contract Size",
+				"CONTRACT_MONTH": "Contract Month",
+				"SIDE": "Buy/ Sell",
+				"ORDER_STATE": "Order State",
+				"TYPE_FILL": "Type Fill",
+				"ORDER_PRICE": "Order Price",
+				"ORDER_QTY": "Order Quantity",
+				"LAST_ORDER_QTY": "Last Order Quantity",
+				"EXECUTED_QTY": "Executed Quantity",
+				"ENTRY": "Order Entry",
+				"TRIGGER_PRICE": "Trigger Price",
+				"EXPIRE_DATE": "Expired Date",
+				"COMMENT": "Comment",
+				"ORDER_TIME": "Order Time",
+				"LAST_ORDER_TIME": "Last Order Time",
+				"EXECUTED_TIME": "Executed Time",
+				"ROUTE": "Order Route",
+				"ORDER_MODE": "Order Mode",
+				"REQUEST_TYPE": "Request Type",
+				"ORDER_EXPIRATION": "Order Expiration",
+				"RELATED_ORDER_ID": "Related Order ID",
+				"EXECUTION_TRIGGER": "Execution Trigger",
+				"SYMBOL_ID": "Symbol ID",
+				"AGENT_ID": "Agent ID",
+				"AGENT_ORDER_FLG": "Agent Order Flag",
+				"PRODUCT_TYPE": "Product Type",
+				"CP":"Call/Put",
+				"STRIKE_PRICE": "Strike Price"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"DEPARTMENT": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add department",
+					"UPDATE": "Update department",
+					"DELETE": "Do you want to"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"DEPT_ID": "DEPT ID",
+					"BRANCH_ID": "BRANCH ID",
+					"BRANCH_CODE": "BRANCH CODE",
+					"DEPT_CODE": "DEPT CODE",
+					"DEPT_NAME": "DEPT NAME"
+				}
+			},
+			"LABEL": {
+				"BRANCH_ID": "Branch ID",
+				"DEPT_NAME": "Dept Name",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"DEPT_ID": "Dept ID",
+				"BRANCH_CODE": "Branch Code",
+				"DEPT_CODE": "Dept Code"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"SECTION": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add section",
+					"UPDATE": "Update section"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"SECTION_ID": "SECTION ID",
+					"SECTION_CODE": "SECTION CODE",
+					"SECTION_NAME": "SECTION NAME",
+					"DEPT_CODE": "DEPT CODE",
+					"DEPT_NAME": "DEPT NAME",
+					"DEPT_ID": "DEPT ID"
+				}
+			},
+			"LABEL": {
+				"ID": "ID",
+				"BRANCH_ID": "Branch ID",
+				"SECTION_ID": "Section ID",
+				"DEPT_NAME": "Dept Name",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"DEPT_ID": "Dept ID",
+				"SECTION_CODE": "Section Code",
+				"SECTION_NAME": "Section Name",
+				"DEPT_CODE": "Dept Code"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"BRANCH_ID": "Branch ID",
+				"DEPT_NAME": "Dept Name",
+				"INSTRUMENT_CODE": "Instrument Code",
+				"DEPT_ID": "Dept ID",
+				"BRANCH_CODE": "Branch Code",
+				"DEPT_CODE": "Dept Code"
+			}
+		},
+		"CONTRACT": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Agent Commission Setting",
+					"UPDATE": "Agent Commission  Detail"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ID": "ID",
+					"CONTRACT_ID": "CONTRACT ID",
+					"COMPANY_ID": "Company ID",
+					"BRANCH_ID": "Branch ID",
+					"ORDER_ID": "Order ID",
+					"ORDER_REF": "Order REF",
+					"EXTERNAL_ID": "External ID",
+					"RELATE_ORDER_ID": "Related Order ID",
+					"ACCOUNT": "Account",
+					"EXCHANGE": "Exchange",
+					"CONTRACT_SIZE":"CONTRACT SIZE",
+					"SYMBOL_CODE": "Symbol Code",
+					"PRODUCT_TYPE": "Product Type",
+					"CONTRACT_MONTH": "Contract Month",
+					"ORDER_STATE":"ORDER STATE",
+					"ORDER_ROUTE":"ORDER ROUTE",
+					"ORDER_TIME": "ORDER_TIME",
+					"REQUEST_TYPE":"REQUEST TYPE",
+					"COMMENT":"COMMENT",
+					"CP": "CALL/PUT",
+					"POSITION_ID":"POSITION ID",
+					"STRIKE_PRICE": "Strike Price",
+					"SYMBOL_ID": "Symbol ID",
+					"ORDER_MODE": "Order Mode",
+					"ORDER_ENTRY": "Order Entry",
+					"SIDE": "BUY/SELL",
+					"ORDER_QTY": "Quantity",
+					"REF_PRICE":"REF PRICE",
+					"LAST_ORDER_QTY": "Last Order Quantity",
+					"EXECUTED_QTY": "Executed Quantity",
+					"ORDER_TYPE": "Order Type",
+					"TYPE_FILL": "Type Fill",
+					"ORDER_PRICE": "Price",
+					"TRIGGER_PRICE": "Trigger Price",
+					"LAST_ORDER_TIME": "Last Order Time",
+					"EXECUTED_TIME": "Executed Time",
+					"ORDER_EXPIRATION": "Order Expiration",
+					"EXPIRED_DATE": "Expired Date",
+					"EXECUTION_TRIGGER": "Execution Trigger",
+					"AGENT_ID": "Agent ID",
+					"AGENT_FLAG": "Agent Flag",
+					"REALIZED_PNL":"REALIZED P&L"
+				}
+			},
+			"LABEL": {
+				"ACCOUNT_ID": "Account",
+				"CONTRACT_ID": "Contract ID",
+				"POSITION_ID": "Position ID",
+				"ORDER_ID": "Order ID",
+				"EXTERNAL_ID": "External ID",
+				"SYMBOL_CODE": "Symbol Code",
+				"CONTRACT_MONTH": "Contract Month",
+				"CP": "Call/Put",
+				"STRIKE_PRICE": "Strike Price",
+				"CONTRACT_SIZE": "Contract Size",
+				"SIDE": "Buy/ Sell",
+				"ORDER_ENTRY": "Order Entry",
+				"PRICE": "Price",
+				"QTY": "Quantity",
+				"REF_PRICE": "Ref Price",
+				"REALIZED_PNL": "Realized P&L",
+				"EXECUTED_TIME": "Executed Time",
+				"LAST_ORDER_TIME": "Last Order Time",
+				"COMMENT": "Comment",
+				"PRODUCT_TYPE": "Product Type",
+				"SYMBOL_ID": "Symbol ID",
+				"COM_METHOD": "Com Method",
+				"ORDER_PRICE": "Price",
+				"COM_TYPE": "Com Type",
+				"ADMIN_COM_UNIT": "Admin Com Unit",
+				"COM_UNIT_T2": "Com Unit T2",
+				"COM_UNIT_T0": "Com Unit T0",
+				"COM_UNIT_T1": "Com Unit T1",
+				"COM_AMT_MIN": "Com Amt Min",
+				"COM_AMT_MAX": "Com Amt Max",
+				"ADMIN_COM_METHOD": "Admin Com Method",
+				"ADMIN_COM_TYPE": "Admin Com Type",
+				"ADMIN_COM_AMT_MIN": "Admin Com Amt Min",
+				"ADMIN_COM_AMT_MAX": "Admin Com Amt Max",
+				"SQ_SETTLEMENT_AMT": "Sq Settlement Amt",
+				"OPEN_COM_AMT": "Open Com Amt",
+				"CLOSE_COM_AMT": "Close Com Amt",
+				"CLOSE_TYPE": "Close Type",
+				"DELIVERY_QTY": "Delivery Qty",
+				"DELIVERY_STATUS": "Delivery Status",
+				"DELIVERY_DATE": "Delivery Date",
+				"VALUE_DATE": "Value Date",
+				"OPTION_TYPE": "Option Type",
+				"EXCHANGE_RATE": "Exchange Rate",
+				"TAX": "Tax",
+				"EXCHANGE_CODE": "Exchange Code",
+				"ORDER_QTY": "Quantity"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"POSITION": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Position",
+					"UPDATE": "Update Position"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"ACCOUNT": "Account",
+					"POSITION_ID": "Position ID",
+					"ORDER_ID": "Order ID",
+					"EXTERNAL_ID": "External ID",
+					"SYMBOL_CODE": "Symbol Code",
+					"CONTRACT_MONTH": "Contract Month",
+					"CP": "Call/Put",
+					"STRIKE_PRICE": "Strike Price",
+					"CONTRACT_SIZE": "Contract Size",
+					"SIDE": "Buy/ Sell",
+					"QTY": "Quantity",
+					"PENDING_QTY": "Pending Quantity",
+					"PRICE": "Price",
+					"EXECUTED_TIME": "Executed Time",
+					"ORDER_TIME": "Order Time"
+				}
+			},
+			"LABEL": {
+				"ACCOUNT_ID": "Account ID",
+				"POSITION_ID": "Position ID",
+				"EXTERNAL_ID": "External ID",
+				"EXCHANGE_CODE": "Exchange Code",
+				"SYMBOL_CODE": "Symbol Code",
+				"CONTRACT_SIZE": "Contract Size",
+				"SIDE": "Buy/ Sell",
+				"PRICE": "Price",
+				"ORDER_TIME": "Order Time",
+				"EXECUTED_TIME": "Executed Time",
+				"LAST_ORDER_TIME": "Last Order Time",
+				"COMMENT": "Comment",
+				"PRODUCT_TYPE": "Product Type",
+				"QTY": "Quantity",
+				"SYMBOL_ID": "Symbol ID",
+				"PENDING_QTY": "Pending Quantity",
+				"ORDER_ID": "Order ID",
+				"DELIVERY_QTY": "Delivery Quantity",
+				"DELIVERY_STATUS": "Delivery Status",
+				"DELIVERY_DATE": "Delivery Date",
+				"OPTION_TYPE": "Option Type",
+				"STRIKE_PRICE": "Strike Price",
+				"CONTRACT_MONTH": "Contract Month",
+				"CP": "Call/Put"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		},
+		"TICK_SIZE": {
+			"MODAL_ADJUST": {
+				"TITLE": {
+					"ADD": "Add Tick Size",
+					"UPDATE": "Update Tick Size"
+				}
+			},
+			"TABLE": {
+				"THEAD": {
+					"TICK_SIZE_CODE": "Tick Size Code",
+					"PRICE_FROM": "Price From",
+					"PRICE_TO": "Price To",
+					"TICK_SIZE_VALUE": "Tick Size Value"
+				}
+			},
+			"LABEL": {
+				"TICK_SIZE_ID": "Tick Size ID",
+				"TICK_SIZE_CODE": "Tick Size Code",
+				"PRICE_FROM": "Price From",
+				"PRICE_TO": "Price To",
+				"TICK_SIZE_VALUE": "Tick Size Value"
+			},
+			"PLACE_HOLDER": {
+				"ID": "ID",
+				"ITEM": "Item",
+				"VALUE": "Value",
+				"DESCRIPTION": "Description"
+			}
+		}
+	},
+	"COMMON": {
+		"CHANGE_PASSWORD": "Change Password",
+		"CURRENT_PASSWORD": "Current Password",
+		"NEW_PASSWORD": "New Password",
+		"CONFIRM_PASSWORD": "Confirm Password",
+		"PASSWORDS_DO_NOT_MATCH": "Passwords do not match",
+		"BUTTON": {
+			"SAVE": "Save",
+			"CANCEL": "Cancel",
+			"SEARCH": "Search",
+			"ADD": "Add",
+			"OK": "OK",
+			"RESET_TRADING_PIN": "Reset Trading Pin",
+			"YES": "Yes",
+			"NO": "No",
+			"DELETE": "Delete"
+		},
+		"OPTIONS" : {
+			"QTY" : "Quantity",
+			"GROSS": "Gross"
+		},
+		"MODAL_TITLE" : {
+			"CONFIRM_UPDATE":"Do you want to UPDATE?",
+			"CONFIRM_DELETE":"Do you want to DELETE?",
+			"CONFIRM_ADD":"Do you want to ADD?"
+		},
+		"MESSAGE": {
+			"ERROR": {
+				"TRADING_PIN_NOT_MATCH": "The new trading pin that you entered does not match!",
+				"TRADING_PIN_LENGTH_ERROR": "The trading pin must be at least 4 characters long!",
+				"REQ_TRADING_PIN_ERROR": "Please input your Trading Pin!",
+				"TRADING_PIN_CHARACTER_TYPE_ERROR": "The trading pin must include at least two types of characters: uppercase, lowercase, numbers, and special characters!",
+				"PASSWORD_REQUIRED": "Password is required!",
+				"PASSWORD_MIN_LENGTH": "Password must be at least 8 characters long!",
+				"PASSWORD_CHARACTER_TYPE_ERROR": "Password must include at least one uppercase letter, one lowercase letter, one number, and one special symbol!",
+				"HOLIDAY_TYPE": "Set date as National holiday or Trading holiday"
+			}
+		}
+	}
+}

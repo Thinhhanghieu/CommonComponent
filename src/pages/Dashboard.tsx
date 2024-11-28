@@ -3,8 +3,8 @@ import { FormProvider, useForm } from "react-hook-form";
 import userApi from "../api/module/user.api";
 import Button, { OutlineButton } from "../components/button/Button";
 import { API_STATUS } from "../constants/general.constant";
-import { IFormLogin } from "../interface/general.interface";
 import "./dashboard.scss";
+import { IFormLogin } from "../interface/form.interface";
 
 
 
