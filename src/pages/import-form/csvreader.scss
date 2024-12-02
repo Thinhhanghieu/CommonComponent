@@ -1,0 +1,22 @@
+@use "../../scss/" as *;
+
+.csv-reader {
+	flex-direction: column;
+	& > * ~ * {
+		margin-top: 2rem;
+	}
+	@include flex(center, center);
+
+	&__form {
+    @include flex (center, center);
+    flex-direction: column;
+    & > * ~ * {
+      margin-top: 1rem;
+    }
+	}
+
+	&__form-item {
+		@include flex(center, space-between);
+    gap: 2rem;
+	}
+}

@@ -1,4 +1,5 @@
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../pages/dashboard/Dashboard";
+import CSVReader from "../pages/import-form/CSVReader";
 
 const routes = [
 	{
@@ -8,6 +9,13 @@ const routes = [
 		),
 		state: "dashboard",
 		path: "dashboard",
+	},
+	{
+		element: (
+			<CSVReader/>
+		),
+		state: "csvReader",
+		path: "csv-reader",
 	},
 ];
 

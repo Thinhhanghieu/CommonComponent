@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import AppLayOut from "./components/layout/AppLayout";
 import routes from "./router/router";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./translation/i18n";
 

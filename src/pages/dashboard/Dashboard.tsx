@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import userApi from "../api/module/user.api";
-import Button, { OutlineButton } from "../components/button/Button";
-import { API_STATUS } from "../constants/general.constant";
+import userApi from "../../api/module/user.api";
+import Button, { OutlineButton } from "../../components/button/Button";
+import { API_STATUS } from "../../constants/general.constant";
 import "./dashboard.scss";
-import { IFormLogin } from "../interface/form.interface";
+import { IFormLogin } from "../../interface/form.interface";
+import { Link } from "react-router-dom";
 
 
 
@@ -42,6 +43,13 @@ const Dashboard = () => {
 
 	return (
 		<div className="dashboard">
+			<div className="flex">
+				<Button>
+					<Link to={'/csv-reader'}>
+					Import Csv
+					</Link>
+				</Button>
+			</div>
 			<h1 className="text-xl text-center mb-2">React Hook Form</h1>
 			<FormProvider {...methods}>
 				<form
