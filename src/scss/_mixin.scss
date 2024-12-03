@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @mixin flex($aligin-item, $justify-content) {
 	display: flex;
 	align-items: $aligin-item;
@@ -6,4 +8,17 @@
 
 @mixin overlay {
   background-color: rgba($color: (#000000), $alpha: 0.6);
+}
+
+
+@mixin dark-mode {
+	background-color: $dark-body-bg;
+	color: $dark-txt-color;
+	input {
+		background-color: $white;
+		color: $black;
+	}
+	.header.shrink{
+		background-color: $dark-header-bg;
+	}
 }

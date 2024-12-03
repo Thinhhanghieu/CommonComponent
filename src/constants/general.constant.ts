@@ -1,6 +1,7 @@
 export const KEY_LOCAL_STORAGE = {
-  AUTHEN: "authen"
-}
+  AUTHEN: "authen",
+  THEME: 'theme'
+} as const
 
 export const API_STATUS = {
   SUCCESS: 200,

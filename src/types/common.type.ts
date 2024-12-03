@@ -1,4 +1,5 @@
 import { INPUT_TYPE, KEY_LOCAL_STORAGE } from "../constants/general.constant";
+import { THEME } from "../redux/features/themeSlice";
 
 /**
  *  This general type is mainly used to create type from constant object.
@@ -35,3 +36,5 @@ export type tLocalStorageKey = ObjectValues<typeof KEY_LOCAL_STORAGE>;
 
 export type ObjectPropType<T, K extends ObjectKeys<T>> = T[K];
 export type tInputType = ObjectValues<typeof INPUT_TYPE>;
+
+export type tTheme = ObjectValues<typeof THEME>;
