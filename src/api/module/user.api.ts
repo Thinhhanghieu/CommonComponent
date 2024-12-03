@@ -11,9 +11,12 @@ interface IUserParams {
 	pageSize: number;
 }
 
+const VERSION_API = "v1";
+
 const userEndpoint = {
-	getList: "/user",
-	removeUser: ({ id }: { id: number }) => `user/${id}`,
+	getList: `${VERSION_API}/user`,
+	removeUser: ({ id }: { id: number }) => `${VERSION_API}/user/${id}`,
+	update: `${VERSION_API}/user`,
 };
 
 const userApi = {
@@ -35,8 +38,20 @@ const userApi = {
 	},
 	remove: async ({ id }: { id: number }): Promise<IResponse<IResponseUser[]>> => {
 		try {
-			const response = await privateClient.get<IResponse<IResponseUser[]>>(
+			const response = await privateClient.delete<IResponse<IResponseUser[]>>(
 				userEndpoint.removeUser({ id })
+			);
+			return response.data;
+		} catch (error) {
+			throw error;
+		}
+	},
+	update: async (params: any): Promise<IResponse<IResponseUser[]>> => {
+		try {
+			const response = await privateClient.post<IResponse<IResponseUser[]>>(
+				userEndpoint.update,
+				// params depends BE to update params for suit cab be obj, ary, etc...
+				params
 			);
 			return response.data;
 		} catch (error) {
