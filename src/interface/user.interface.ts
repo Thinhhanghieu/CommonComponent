@@ -47,9 +47,6 @@ export const STATUS = {
      DEACTIVATE: 0,
 } as const;
 
-export type RoleCdType = typeof ROLE_CD[keyof typeof ROLE_CD];
-
-export type StatusType = typeof STATUS[keyof typeof STATUS];
 
 export interface IAuthData {
      token: string;

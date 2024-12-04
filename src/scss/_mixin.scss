@@ -11,6 +11,7 @@
 }
 
 
+// Include this in app.scss
 @mixin dark-mode {
 	background-color: $dark-body-bg;
 	color: $dark-txt-color;

@@ -16,10 +16,10 @@ const userSlice = createSlice({
 	reducers: {
 		setUser: (state, action: PayloadAction<Nullable<IAuthData>>) => {
 			if (action.payload === null) {
-				localStorage.removeItem(KEY_LOCAL_STORAGE.AUTHEN);
+				localStorage.removeItem(KEY_LOCAL_STORAGE.TOKEN);
 			} else {
 				if (action.payload.token){
-					localStorage.setItem(KEY_LOCAL_STORAGE.AUTHEN, action.payload.token);
+					localStorage.setItem(KEY_LOCAL_STORAGE.TOKEN, action.payload.token);
 				}
 			}
 

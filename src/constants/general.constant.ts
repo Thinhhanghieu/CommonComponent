@@ -1,5 +1,5 @@
 export const KEY_LOCAL_STORAGE = {
-  AUTHEN: "authen",
+  TOKEN: "token",
   THEME: 'theme'
 } as const
 
