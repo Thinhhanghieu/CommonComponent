@@ -1,5 +1,6 @@
 import Dashboard from "../pages/dashboard/Dashboard";
 import CSVReader from "../pages/import-form/CSVReader";
+import MuiExample from "../pages/mui/MuiExample";
 
 const routes = [
 	{
@@ -8,7 +9,6 @@ const routes = [
 			<Dashboard/>
 		),
 		state: "dashboard",
-		path: "dashboard",
 	},
 	{
 		element: (
@@ -16,6 +16,13 @@ const routes = [
 		),
 		state: "csvReader",
 		path: "csv-reader",
+	},
+	{
+		element: (
+			<MuiExample/>
+		),
+		state: "mui",
+		path: "mui",
 	},
 ];
 
