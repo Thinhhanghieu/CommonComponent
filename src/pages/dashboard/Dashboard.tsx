@@ -7,7 +7,59 @@ import { IFormLogin } from "../../interface/form.interface";
 import "./dashboard.scss";
 import { Button, Input } from "antd";
 import ButtonSecondary from "../../components/common/ButtonSecondary";
+import DynamicForm, { FieldConfig } from "../../components/common/DynamicForm";
+import * as yup from "yup";
+import FormMui from "../../components/form-mui/FormMui";
 
+const formFields: FieldConfig[] = [
+	{
+		name: "firstName",
+		label: "First Name",
+		type: "text",
+		validation: yup.string().required("First Name is required"),
+	},
+	{
+		name: "lastName",
+		label: "Last Name",
+		type: "text",
+		validation: yup.string().required("Last Name is required"),
+	},
+	{
+		name: "email",
+		label: "Email",
+		type: "email",
+		validation: yup.string().email("Invalid email").required("Email is required"),
+	},
+	{
+		name: "age",
+		label: "Age",
+		type: "number",
+		validation: yup
+			.number()
+			.positive("Age must be positive")
+			.required("Age is required"),
+	},
+	{
+		name: "password",
+		label: "Password",
+		type: "password",
+		validation: yup
+			.string()
+			.min(6, "Password must be at least 6 characters")
+			.required("Password is required"),
+	},
+	{
+		name: "gender",
+		label: "Gender",
+		type: "select",
+		options: [
+			{ value: "male", label: "Male" },
+			{ value: "female", label: "Female" },
+			{ value: "other", label: "Other" },
+		],
+		validation: yup.string().required("Gender is required"),
+	},
+];
 const Dashboard = () => {
 	const methods = useForm<IFormLogin>({
 		defaultValues: {
@@ -23,6 +75,9 @@ const Dashboard = () => {
 		getListUser();
 	}, []);
 
+	const handleFormSubmit = (data: any) => {
+		console.log(data);
+	};
 	const getListUser = async () => {
 		try {
 			const response = await userApi.getList({
@@ -100,9 +155,11 @@ const Dashboard = () => {
 							<Input></Input>
 
 							<ButtonSecondary> Btn secondary</ButtonSecondary>
+							{/* <DynamicForm formFields={formFields} onSubmit={handleFormSubmit}></DynamicForm> */}
 						</div>
 					</div>
 				</form>
+				<FormMui></FormMui>
 			</FormProvider>
 		</div>
 	);

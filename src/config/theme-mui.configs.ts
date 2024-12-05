@@ -35,7 +35,7 @@ const themeMuiConfigs = {
 				  }
 				: {
 						primary: {
-							main: colors.blue[100],
+							main: colors.yellow[100],
 						},
 						secondary: {
 							main: "#f44336",
