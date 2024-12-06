@@ -18,7 +18,7 @@ export const FormInputAutocomplete = <TValue, TLabel>({
 				{...props}
 				options={options}
 				getOptionLabel={getOptionLabel}
-				onChange={(_, data) => onChange(data)}
+				onChange={(_, data) => onChange(data?.value)}
 				renderInput={(params) => (
 					<TextField
 						{...params}
