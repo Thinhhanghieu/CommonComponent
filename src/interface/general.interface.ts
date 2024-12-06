@@ -1,4 +1,4 @@
-export interface IOption {
-	value: string | number;
-	label: string;
+export interface IOption<tValue = string , tLabel =string > {
+	value: tValue;
+	label: tLabel;
 }

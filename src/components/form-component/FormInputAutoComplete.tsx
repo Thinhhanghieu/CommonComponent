@@ -1,35 +1,33 @@
-import React from "react";
+import { Autocomplete, TextField } from "@mui/material";
 import { Controller } from "react-hook-form";
-import Autocomplete from "@mui/material/Autocomplete";
-import TextField from "@mui/material/TextField";
-import { FormInputAutocompleteProps } from "./FormInputProps";
+import { IFormInputAutocompleteProps } from "./FormInputProps";
 
-export const FormInputAutocomplete = ({ name, control, label, options }: FormInputAutocompleteProps) => {
-  return (
-    <Controller
-      name={name}
-      control={control}
-      render={({
-        field: { onChange, value },
-        fieldState: { error },
-      }) => (
-        <Autocomplete
-          options={options}
-          getOptionLabel={(option) => option.label || ""}
-          onChange={(_, data) => onChange(data)}
-          value={value || null}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label={label}
-              variant="outlined"
-              error={!!error}
-              helperText={error ? error.message : null}
-              fullWidth
-            />
-          )}
-        />
-      )}
-    />
-  );
-};
+export const FormInputAutocomplete = <TValue, TLabel>({
+	control,
+	name,
+	options,
+	getOptionLabel,
+	label,
+	...props
+}: IFormInputAutocompleteProps<TValue, TLabel>) => (
+	<Controller
+		name={name}
+		control={control}
+		render={({ field: { onChange, value }, fieldState: { error } }) => (
+			<Autocomplete
+				{...props}
+				options={options}
+				getOptionLabel={getOptionLabel}
+				onChange={(_, data) => onChange(data)}
+				renderInput={(params) => (
+					<TextField
+						{...params}
+						label={label}
+						helperText={error ? error.message : null}
+						error={!!error}
+					/>
+				)}
+			/>
+		)}
+	/>
+);

@@ -1,36 +1,37 @@
-import { Controller } from "react-hook-form";
-import { FormInputSelectProps } from "./FormInputProps";
-import Select from "@mui/material/Select";
+import { FormControl, FormHelperText, InputLabel } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import FormHelperText from "@mui/material/FormHelperText";
+import Select from "@mui/material/Select";
+import { Controller } from "react-hook-form";
+import { IFormInputSelectProps } from "./FormInputProps";
+import { ReactNode } from "react";
 
-export const FormInputSelect = ({ name, control, label, options }: FormInputSelectProps) => {
-  return (
-    <Controller
-      name={name}
-      control={control}
-      render={({
-        field: { onChange, value },
-        fieldState: { error },
-      }) => (
-        <FormControl fullWidth variant="outlined" error={!!error} size="small">
-          <InputLabel>{label}</InputLabel>
-          <Select
-            value={value}
-            onChange={onChange}
-            label={label}
-          >
-            {options.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </Select>
-          {error && <FormHelperText>{error.message}</FormHelperText>}
-        </FormControl>
-      )}
-    />
-  );
-};
+export const FormInputSelect = <TValue extends string | number, TLabel extends ReactNode>({
+  control,
+  name,
+  options,
+  ...props
+}: IFormInputSelectProps<TValue, TLabel>) => (
+  <Controller
+    name={name}
+    control={control}
+    render={({ field: { onChange, value }, fieldState: { error } }) => (
+      <FormControl fullWidth error={!!error}>
+        <InputLabel>{props.label}</InputLabel>
+        <Select
+          {...props}
+          value={value}
+          onChange={onChange}
+          error={!!error}
+        >
+          {options.map((option) => (
+            <MenuItem key={option.value.toString()} value={option.value}>
+              {option.label}
+            </MenuItem>
+          ))}
+        </Select>
+        {error && <FormHelperText>{error.message}</FormHelperText>}
+      </FormControl>
+    )}
+  />
+);
+
