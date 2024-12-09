@@ -48,7 +48,7 @@ const themeMuiConfigs = {
 		return createTheme({
 			palette: {
 				...customPalette,
-        mode
+        mode,
 
 			},
 			components: {
@@ -57,6 +57,7 @@ const themeMuiConfigs = {
 				},
 			},
       typography : {
+				fontFamily:"Montserrat"
       }
 
 		});

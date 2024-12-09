@@ -18,6 +18,7 @@ export const getThemeConfig: tCustomThemeConfig = {
 						token: {
 							colorPrimary: colors.mainColor,
 							colorTextBase: colors.black,
+							fontFamily:"Montserrat"
 						},
 						components: {
 							Input: {
