@@ -1,29 +1,25 @@
 import { Controller } from "react-hook-form";
 import { IFormInputProps } from "./FormInputProps";
 import TextField from "@mui/material/TextField";
+import { FC } from "react";
 
-export const FormInputTextArea = ({
+export const FormInputTextArea: FC<IFormInputProps> = ({
 	name,
 	control,
-	label,
-	variant = "outlined",
-}: IFormInputProps) => {
+	...props
+}) => {
 	return (
 		<Controller
 			name={name}
 			control={control}
 			render={({ field: { onChange, value }, fieldState: { error } }) => (
 				<TextField
+					{...props}
 					helperText={error ? error.message : null}
-					size="small"
 					error={!!error}
 					onChange={onChange}
 					value={value}
-					fullWidth
-					label={label}
-					variant={variant}
 					multiline
-					rows={4}
 				/>
 			)}
 		/>

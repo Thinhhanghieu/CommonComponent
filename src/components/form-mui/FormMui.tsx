@@ -68,7 +68,7 @@ const FormMui = () => {
 				name="text"
 				control={control}
 				label="Example Text"
-				variant="standard"
+				variant="filled"
 				disabled={false}
 				fullWidth
 			/>
@@ -82,9 +82,9 @@ const FormMui = () => {
 				]}
 			/>
 			<FormInputCheckbox name="checkbox" control={control} label="Checkbox Input" />
-			<FormInputRadio name="radio" control={control} options={radioOptions} />
+			<FormInputRadio name="radio" control={control} options={radioOptions}  />
 			<FormInputSwitch name="switch" control={control} label="Switch Input" />
-			<FormInputTextArea name="textarea" control={control} label="Text Area Input" />
+			<FormInputTextArea name="textarea" control={control} label="Text Area Input" rows={4}  variant="outlined" />
 			<FormInputAutocomplete<number, string>
 				name="autocomplete"
 				control={control}

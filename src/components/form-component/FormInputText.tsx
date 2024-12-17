@@ -18,7 +18,6 @@ export const FormInputText: FC<IFormInputProps> = ({
         error={!!error}
         onChange={onChange}
         value={value}
-        fullWidth
       />
     )}
   />
