@@ -82,9 +82,15 @@ const FormMui = () => {
 				]}
 			/>
 			<FormInputCheckbox name="checkbox" control={control} label="Checkbox Input" />
-			<FormInputRadio name="radio" control={control} options={radioOptions}  />
+			<FormInputRadio name="radio" control={control} options={radioOptions} />
 			<FormInputSwitch name="switch" control={control} label="Switch Input" />
-			<FormInputTextArea name="textarea" control={control} label="Text Area Input" rows={4}  variant="outlined" />
+			<FormInputTextArea
+				name="textarea"
+				control={control}
+				label="Text Area Input"
+				rows={4}
+				variant="outlined"
+			/>
 			<FormInputAutocomplete<number, string>
 				name="autocomplete"
 				control={control}
@@ -108,7 +114,6 @@ const FormMui = () => {
 				label="Time Picker Input"
 			/>
 			<FormInputFile name="file" control={control} />
-
 			<Button type="submit" color="primary" variant="contained">
 				Submit
 			</Button>

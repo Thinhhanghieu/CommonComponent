@@ -10,7 +10,6 @@ import { ThemeProvider } from "@mui/material";
 import themeMuiConfigs from "./config/theme-mui.configs";
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-
 export default function App() {
 	const { theme } = useAppSelector((state) => state.theme);
 
