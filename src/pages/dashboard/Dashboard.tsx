@@ -10,6 +10,7 @@ import ButtonSecondary from "../../components/common/ButtonSecondary";
 import DynamicForm, { FieldConfig } from "../../components/common/DynamicForm";
 import * as yup from "yup";
 import FormMui from "../../components/form-mui/FormMui";
+import privateClient from "../../api/client/private.client";
 
 const formFields: FieldConfig[] = [
 	{
@@ -61,6 +62,15 @@ const formFields: FieldConfig[] = [
 	},
 ];
 const Dashboard = () => {
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const response = await privateClient.get('/321312')
+			// use response here
+		}
+		fetchData()
+	}, [])
+	
 	const methods = useForm<IFormLogin>({
 		defaultValues: {
 			example: "",
@@ -160,6 +170,7 @@ const Dashboard = () => {
 					</div>
 				</form>
 				<FormMui></FormMui>
+				{process.env.REACT_APP_API_URL}
 			</FormProvider>
 		</div>
 	);

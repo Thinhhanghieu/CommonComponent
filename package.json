@@ -22,6 +22,7 @@
     "bootstrap": "^5.3.3",
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
+    "dotenv-cli": "^7.4.4",
     "i18next": "^24.0.2",
     "i18next-http-backend": "^3.0.1",
     "papaparse": "^5.4.1",
@@ -43,6 +44,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:stg": "dotenv -e .env.stg react-scripts build",
+    "build:prod": "dotenv -e .env.prod react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
